@@ -47,7 +47,7 @@ st.markdown("""
 # ── Data loading ──────────────────────────────────────────────────────────────
 @st.cache_data
 def load_data():
-    df = pd.read_csv("merged_dataset_final__2_.csv")
+    df = pd.read_csv("merged_dataset_final.csv")
     df["date"] = pd.to_datetime(df["date"], dayfirst=False)
     df["year"]  = df["date"].dt.year
     df["month"] = df["date"].dt.month
